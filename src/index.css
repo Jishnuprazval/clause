@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom clause highlight styles */
+.highlight-critical {
+  background-color: rgba(239, 68, 68, 0.25);
+  border-bottom: 2px solid #dc2626;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.highlight-critical:hover, .highlight-critical.active {
+  background-color: rgba(239, 68, 68, 0.45);
+  outline: 2px solid #b91c1c;
+}
+
+.highlight-high {
+  background-color: rgba(249, 115, 22, 0.25);
+  border-bottom: 2px solid #ea580c;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.highlight-high:hover, .highlight-high.active {
+  background-color: rgba(249, 115, 22, 0.45);
+  outline: 2px solid #c2410c;
+}
+
+.highlight-medium {
+  background-color: rgba(245, 158, 11, 0.25);
+  border-bottom: 2px solid #d97706;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.highlight-medium:hover, .highlight-medium.active {
+  background-color: rgba(245, 158, 11, 0.45);
+  outline: 2px solid #b45309;
+}
+
+.highlight-low {
+  background-color: rgba(59, 130, 246, 0.2);
+  border-bottom: 2px solid #2563eb;
+  border-radius: 2px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.highlight-low:hover, .highlight-low.active {
+  background-color: rgba(59, 130, 246, 0.4);
+  outline: 2px solid #1d4ed8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.8);
+}

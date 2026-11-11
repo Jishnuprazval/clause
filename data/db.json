@@ -1,0 +1,119 @@
+{
+  "users": [],
+  "contracts": [
+    {
+      "userId": "demo_user",
+      "contractName": "Sample Tech Internship Agreement (Demonstration)",
+      "contractType": "Internship Offer Letter",
+      "originalFileName": "Sample_Internship_Agreement_Demo.pdf",
+      "extractedText": "CONFIDENTIAL INTERNSHIP & EMPLOYMENT APPOINTMENT AGREEMENT\n\nThis Agreement is entered into on this 1st day of June, 2026, by and between Apex Global Technologies Corp. (\"Company\") and the Intern/Appointee (\"Appointee\").\n\nWHEREAS, the Company desires to retain the services of the Appointee and the Appointee desires to render services under the terms and conditions outlined herein.\n\n1. POSITION AND DUTIES\nThe Appointee shall perform engineering and technical support duties as designated by the Company. Appointee agrees to devote 100% of their operational working time and attention exclusively to Company activities.\n\n2. COMPENSATION & STIPEND\nThe Appointee shall receive a monthly stipend of $1,800 USD, payable on the last business day of each calendar month, subject to company review.\n\n3. MANDATORY SERVICE BOND & LOCK-IN PERIOD\nThe Appointee hereby agrees and commits to serve the Company for a minimum period of 24 months (2 years) from the formal commencement date. In the event of early resignation, unauthorized absence, or if the Appointee leaves prior to the expiration of the 2-year mandatory service bond, the Appointee agrees to pay a penalty and liquidated damages of $5,000 USD to the Company for onboarding, administration, and training expenses incurred.\n\n4. POST-TERMINATION NON-COMPETE RESTRICTIONS\nFollowing termination or cessation of this agreement for any reason, the Appointee shall not directly or indirectly engage in, work for, render services to, or be employed by any competitor or similar technology business operating within a 150-mile radius for a restrictive period of 12 months.\n\n5. SALARY DEDUCTIONS & DAMAGE WITHHOLDING\nThe Company reserves the right to deduct from salary, stipend, or final compensation any sums or expenses deemed necessary by management for alleged damages, software bugs, project delays, or equipment breakage at its sole discretion, without requiring external arbitration or employee approval.\n\n6. NOTICE PERIOD & EXIT CONDITIONS\nEither party may seek exit after the mandatory bond period; however, the Appointee must provide a notice period of not less than 90 days in writing. In the event the Appointee resigns, the final month shall be unpaid during the notice period, or the Appointee shall pay salary in lieu of notice payable immediately upon departure.\n\n7. INTELLECTUAL PROPERTY & ALL-INVENTIONS ASSIGNMENT\nThe Appointee agrees that any and all inventions, discoveries, code, patents, and intellectual property conceived, developed, or created by the Appointee—whether during or outside working hours, on company equipment or personal devices, prior to or during the tenure of this agreement—shall automatically and irrevocably become the sole and exclusive property of the Company. The Appointee hereby waives all moral rights.\n\n8. UNILATERAL AMENDMENT OF TERMS\nThe Company reserves the right to modify, amend, update, or alter these terms, compensation levels, and internal operational policies at any time in its sole discretion without prior written notice to the Appointee, and continued performance shall constitute binding acceptance.\n\n9. DATA SHARING & PERSONAL PRIVACY\nThe Company reserves the unconditional right to collect, monitor, store, and transfer personal data, biometric identifiers, device communications, and internal records to third-party affiliates and marketing partners globally without restriction.\n\n10. INDEMNIFICATION & LIABILITY\nThe Appointee agrees to indemnify, hold harmless, and defend the Company from and against any and all claims, liabilities, lawsuits, and legal fees arising from the Appointee's performance or services, with unlimited personal liability.\n\nIN WITNESS WHEREOF, the parties hereto have executed this Agreement.\n\nApex Global Technologies Corp.\nBy: Authorized Signatory\nAppointee: [Signature Pending Analysis]",
+      "pageCount": 2,
+      "status": "analyzed",
+      "isSample": true,
+      "_id": "contract_1794423996619_jgk3m",
+      "uploadDate": "2026-11-11T19:06:36.619Z"
+    }
+  ],
+  "analyses": [
+    {
+      "userId": "demo_user",
+      "contractId": "contract_1794423996619_jgk3m",
+      "riskScore": 36,
+      "riskLevel": "Moderate",
+      "totalIssues": 4,
+      "severityBreakdown": {
+        "critical": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      "detectedClauses": [
+        {
+          "id": "clause_RULE-05-SALARY-DEDUCTIONS_1",
+          "ruleId": "RULE-05-SALARY-DEDUCTIONS",
+          "category": "Salary Deductions & Withholding",
+          "matchedText": "SALARY DEDUCTIONS & DAMAGE WITHHOLDING\nThe Company reserves the right to deduct from salary, stipend, or final compensation any sums or expenses deemed necessary by management for alleged damages, software bugs, project delays, or equipment breakage at its sole discretion, without requiring external arbitration or employee approval.",
+          "startIndex": 1673,
+          "endIndex": 1713,
+          "pageNumber": 1,
+          "severity": "critical",
+          "explanation": "Gives the employer broad authority to deduct or withhold money from your salary for alleged damages, errors, or disputes.",
+          "whyItMatters": "Wages are legally protected earnings. Discretionary employer deductions without independent verification or statutory authorization are often improper and financially destabilizing.",
+          "suggestedQuestions": [
+            "What objective guidelines govern deductions, and is an independent grievance process available?",
+            "Does this clause comply with standard statutory wage protection regulations?"
+          ],
+          "suggestedNegotiation": "Specify that deductions are restricted only to statutory legal obligations (taxes) or mutually agreed advance repayments, excluding unilateral assessments of property damages."
+        },
+        {
+          "id": "clause_RULE-06-UNPAID-NOTICE-PERIOD_2",
+          "ruleId": "RULE-06-UNPAID-NOTICE-PERIOD",
+          "category": "Notice Period & Exit Terms",
+          "matchedText": "NOTICE PERIOD & EXIT CONDITIONS\nEither party may seek exit after the mandatory bond period; however, the Appointee must provide a notice period of not less than 90 days in writing.",
+          "startIndex": 2091,
+          "endIndex": 2129,
+          "pageNumber": 1,
+          "severity": "high",
+          "explanation": "Demands an unusually long notice period (e.g. 60–90+ days) or imposes forfeiture of pay during exit.",
+          "whyItMatters": "Prolonged notice periods (such as 90 days for entry-level or junior staff) can deter future employers and create financial uncertainty during career transitions.",
+          "suggestedQuestions": [
+            "Can the notice period be shortened to standard 15-30 days during probation or initial tenure?",
+            "Does the employer guarantee full salary and benefits throughout the notice period, including garden leave?"
+          ],
+          "suggestedNegotiation": "Seek standard reciprocal notice (e.g., 2 weeks to 30 days) and ensure full compensation during any garden leave or transition period."
+        },
+        {
+          "id": "clause_RULE-09-IP-OWNERSHIP_3",
+          "ruleId": "RULE-09-IP-OWNERSHIP",
+          "category": "Intellectual Property Ownership",
+          "matchedText": "The Appointee hereby waives all moral rights.",
+          "startIndex": 2775,
+          "endIndex": 2798,
+          "pageNumber": 2,
+          "severity": "critical",
+          "explanation": "Claims ownership of inventions, code, or creative work created by you outside work hours or unrelated to company business.",
+          "whyItMatters": "An overly broad IP assignment can strip you of rights to personal side projects, pre-existing open-source contributions, or future independent ventures.",
+          "suggestedQuestions": [
+            "Does this assignment exclude personal projects created on personal time and personal devices with no company IP?",
+            "How does the company record and carve out pre-existing intellectual property prior to start date?"
+          ],
+          "suggestedNegotiation": "Insert clear carve-out: \"Excludes inventions and works created on the individual's own time without using company proprietary assets, trade secrets, or equipment.\""
+        },
+        {
+          "id": "clause_RULE-10-LIABILITY-INDEMNITY_4",
+          "ruleId": "RULE-10-LIABILITY-INDEMNITY",
+          "category": "Liability & Indemnification",
+          "matchedText": "INDEMNIFICATION & LIABILITY\nThe Appointee agrees to indemnify, hold harmless, and defend the Company from and against any and all claims, liabilities, lawsuits, and legal fees arising from the Appointee's performance or services, with unlimited personal liability.",
+          "startIndex": 3483,
+          "endIndex": 3537,
+          "pageNumber": 2,
+          "severity": "high",
+          "explanation": "Imposes heavy, one-sided personal financial responsibility to defend or compensate the other party against legal claims and losses.",
+          "whyItMatters": "Unlimited indemnification exposes an employee or contractor to potentially ruinous personal liability for ordinary commercial disputes or third-party claims.",
+          "suggestedQuestions": [
+            "Is the indemnification mutual or covered under company errors and omissions (E&O) insurance?",
+            "Can liability be capped at the total compensation received under this agreement?"
+          ],
+          "suggestedNegotiation": "Cap total liability to the amount of fees paid in the preceding 6–12 months, eliminate consequential/indirect damages, and exclude gross negligence or willful misconduct."
+        }
+      ],
+      "analysisSummary": "Identified 4 potentially restrictive or one-sided condition(s) requiring clarification before signature, notably regarding Salary Deductions & Withholding, Notice Period & Exit Terms, Intellectual Property Ownership. Review highlighted items and prepare questions for the counterparty.",
+      "generalQuestions": [
+        "Can you clarify how early departure or resignation during probation is handled?",
+        "Are there any financial obligations, training cost recoupment, or notice period deductions?",
+        "Are all post-employment restrictions limited strictly to direct business competitors?",
+        "Will you provide mutual written consent for any changes to job duties or compensation?"
+      ],
+      "negotiationPoints": [
+        "Request mutual reciprocal notice periods instead of unilateral employer-only privileges.",
+        "Ask for a waiver of liquidated damages for early departure in the event of health or personal hardship.",
+        "Clarify ownership of personal side-projects created on your own time without company assets."
+      ],
+      "evaluatedRulesCount": 10,
+      "isSample": true,
+      "_id": "analysis_1794423996619_3h8uj",
+      "createdAt": "2026-11-11T19:06:36.619Z"
+    }
+  ],
+  "comparisons": []
+}

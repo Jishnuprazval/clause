@@ -1,0 +1,6 @@
+{
+  "name": "ClauseRadar – Contract Risk Highlighter",
+  "description": "Automated contract risk analyzer detecting risky clauses, calculating risk scores, generating simple English explanations, and assisting negotiations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
